@@ -1,0 +1,77 @@
+/* 
+    Document   : TD1
+    Created on : 27 mars 2013, 14:53:50
+    Author     : claire
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body { 
+    display: block;
+    margin:auto;
+}
+
+nav
+{
+    display: inline-block;
+    background-color: #CCC;
+    width: 100%;
+}
+
+nav li
+{
+    display: inline-block;
+    padding:10px;
+}
+
+#maintitle
+{
+    
+}
+
+.titre
+{
+    position:relative;
+    float:left;
+    display:inline-block;
+    width: 100%;
+    border : 1px solid #CCC;
+    margin: auto;
+}
+
+.titre h1{
+    margin: auto;
+    text-align: center;
+}
+
+.presentation
+{
+    /*display: inline-block;*/
+    /*position : absolute;*/
+    
+    top : 30px;
+    width:800px;
+    border : 1px solid #CCC;
+    
+}
+
+.imagetitre
+{
+    /*position: relative;*/
+    top:10px;
+    display: inline-block;
+    width:40%;
+    border : 1px solid #CCC;
+}
+
+.texteaccueil
+{
+    /*position: relative;*/
+    float:right;
+    display: inline-block;
+    top:10px;
+    width:60%;
+    border : 1px solid #CCC;
+    padding-left: 5%;
+}
+
