@@ -5,16 +5,20 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>La Théière, les meilleurs thés pour palais exigeants</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--[if lt IE 9]>                       // compatibilité de certaines balises HTML5 avec IE
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
         <link rel="stylesheet" type="text/css" href="TD1.css">
+        <!--        Liens vers des polices web google :-->
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header>
             <nav>
-                <div id="maintitle">
-                    <h1>La Théière</h1>
-                </div>
+                <h1>La Théière</h1>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="thes.html">Nos thés</a></li>
@@ -23,16 +27,17 @@ and open the template in the editor.
                 </ul>
             </nav>
         </header>
-        <div class="titre">
+        <div class="h1accueil">
             <h1> Bienvenue sur le meilleur des sites de thés !</h1>
+
+            <section class="presentation">
+                <img id="imagetitre" src="green_tea.jpg">
+                <div class="texteaccueil">
+                    <h2>Grâce à nous, trouvez le thé qui vous correspond !</h2>
+                    <p>Notre connaissance de ouf du thé nous permet de savoir même avant vous ce que vous allez aimer.</p>
+                    <p>Jetez un oeil !</p>
+                </div>
+            </section>
         </div>
-        <section class="presentation">
-            <div class="imagetitre"></div>
-            <div class="texteaccueil">
-                <h2>Grâce à nous, trouver le thé qui vous correspond !</h2>
-                <p>Notre connaissance de ouf du thé nous permet de savoir même avant vous ce que vous allez aimer.</p>
-                <p>Jetez un oeil !</p>
-            </div>
-        </section>
     </body>
 </html>

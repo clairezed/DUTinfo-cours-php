@@ -3,75 +3,129 @@
     Created on : 27 mars 2013, 14:53:50
     Author     : claire
     Description:
-        Purpose of the stylesheet follows.
+    Problèmes en cours :
+        - le contenu est décalé sur la droite, et non cenré
+        - pourquoi le header ne colle plus aux bords, BORDEL ????
+        - décalage menu sur la droite
 */
 
 body { 
-    display: block;
-    margin:auto;
+    /*display: block;*/
+    background-color: #c5f85f;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400; 
+}
+
+header
+{
+    width:100%;
+    min-width:400px;
+    background-color: #92d709;
+/*        position: fixed;         pour ue le menu reste en haut, même en cas défilement page 
+            
+    top:0px;
+    left:0px;*/
+            margin-bottom: 0px;
 }
 
 nav
 {
     display: inline-block;
-    background-color: #CCC;
-    width: 100%;
+    width: 100%; 
+
 }
+
+nav ul
+{
+    display: inline-block;
+
+}
+
 
 nav li
 {
     display: inline-block;
-    padding:10px;
+    padding-left: 10px;
+    text-transform: uppercase;      /*menu en lettre cap*/
 }
 
-#maintitle
+nav a
 {
-    
+    text-decoration: none;      /*enleve le soulignement des liens*/
+    color: #333;
+    font-weight: 700; 
 }
 
-.titre
+nav a:hover
 {
-    position:relative;
-    float:left;
+    color: #777;
+}
+
+nav h1
+{
+    display: inline-block;
+    font-size: 2.5em;
+    margin-left: 1%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.h1accueil
+{
+    /*    position:relative;*/
+    /*float:left;*/
     display:inline-block;
-    width: 100%;
-    border : 1px solid #CCC;
-    margin: auto;
+    /*border : 1px solid #CCC;*/
+    width:80%;
+    margin:auto;
 }
 
-.titre h1{
+.h1accueil h1{
     margin: auto;
     text-align: center;
+    padding: 2%;
+    color: #233402;
+
+}
+
+h1, h2
+{
+    font-family: 'Pacifico', cursive;
 }
 
 .presentation
 {
-    /*display: inline-block;*/
-    /*position : absolute;*/
-    
-    top : 30px;
-    width:800px;
-    border : 1px solid #CCC;
-    
-}
+    width:80%;
+    margin:auto;
+    /*    border : 1px solid #CCC;*/
+    background: #e2fcb0;
 
-.imagetitre
+}
+/*
+.presa-gauche
+{
+    display: inline-block;
+    width:800px;
+}*/
+
+
+#imagetitre
 {
     /*position: relative;*/
-    top:10px;
-    display: inline-block;
-    width:40%;
-    border : 1px solid #CCC;
+    display: inline-block;      /* permet positionnement cote a cote*/
+    width:45%;
+    vertical-align: top;        /* pour que image et txt accueil soit aligné sur le haut (bas par défaut)*/
+    /*border : 1px solid #CCC;*/
 }
 
 .texteaccueil
 {
     /*position: relative;*/
-    float:right;
+    overflow: auto;         /* en cas de débordement du texte, navigateur gère (barre défilement ar ex)*/
     display: inline-block;
-    top:10px;
-    width:60%;
-    border : 1px solid #CCC;
+    width:45%;
+    vertical-align: top; 
+    /*border : 1px solid #CCC;*/
     padding-left: 5%;
 }
 
