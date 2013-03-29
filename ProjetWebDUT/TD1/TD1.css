@@ -4,9 +4,10 @@
     Author     : claire
     Description:
     Problèmes en cours :
-        - le contenu est décalé sur la droite, et non cenré
-        - pourquoi le header ne colle plus aux bords, BORDEL ????
+        - le contenu est décalé sur la droite, et non centré -> A priori, c'est le "width:80%" de la classe h1accueil qui cause ça. En le passant à 100% c'est bien centré.
+        - pourquoi le header ne colle plus aux bords, BORDEL ???? -> Là je ne vois pas, mais j'aime bien comme ça
         - décalage menu sur la droite
+		- Le site passe mal sur IE10 : les lettres accentées de la police Pacifico ne s'affichent pas. Je ne peux pas tester sur les versions antérieures d'IE, j'ai peur que ce soit pire.
 */
 
 body { 
@@ -21,11 +22,10 @@ header
     width:100%;
     min-width:400px;
     background-color: #92d709;
-/*        position: fixed;         pour ue le menu reste en haut, même en cas défilement page 
-            
+/*  position: fixed;         pour ue le menu reste en haut, même en cas défilement page        
     top:0px;
     left:0px;*/
-            margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 nav
@@ -76,7 +76,7 @@ nav h1
     /*float:left;*/
     display:inline-block;
     /*border : 1px solid #CCC;*/
-    width:80%;
+    width:100%;
     margin:auto;
 }
 
@@ -85,10 +85,9 @@ nav h1
     text-align: center;
     padding: 2%;
     color: #233402;
-
 }
 
-h1, h2
+h1, h2, h3
 {
     font-family: 'Pacifico', cursive;
 }
@@ -99,7 +98,6 @@ h1, h2
     margin:auto;
     /*    border : 1px solid #CCC;*/
     background: #e2fcb0;
-
 }
 /*
 .presa-gauche
@@ -128,4 +126,97 @@ h1, h2
     /*border : 1px solid #CCC;*/
     padding-left: 5%;
 }
+
+/* CSS pour la page contact */
+
+.h1contact
+{
+	display:inline-block;
+    width:100%;
+    margin:auto;
+}
+
+.h1contact h1
+{
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+    color: #233402;
+}
+
+.contact
+{
+    width:80%;
+    margin:auto;
+    background: #e2fcb0;
+}
+
+.textecontact
+{
+    overflow: auto;       
+    display: inline-block;
+    width:45%;
+    vertical-align: top; 
+    padding-left: 5%;
+}
+
+#imagecontact
+{
+    display: inline-block;      /* permet positionnement cote a cote*/
+    width:45%;
+    vertical-align: top;        /* pour que image et txt accueil soit aligné sur le haut (bas par défaut)*/
+	padding-left: 4.6%;
+}
+
+.contact a
+{
+	color:#C79F4B;
+}
+
+/* CSS pour la page thés */
+
+.h1thes
+{
+	display:inline-block;
+    width:100%;
+    margin:auto;
+}
+
+.h1thes h1
+{
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+    color: #233402;
+}
+
+.thessoustitre
+{
+    width:80%;
+    margin:auto;
+    background: #e2fcb0;
+	text-align: center
+}
+
+.thes
+{
+    width:80%;
+    margin:auto;
+    background: #e2fcb0;
+}
+
+.textethes
+{
+    overflow: auto;       
+    display: inline-block;
+    width:45%;
+    vertical-align: top; 
+}
+
+#imagethes
+{
+    display: inline-block;     
+    vertical-align: top;       
+}
+
 
