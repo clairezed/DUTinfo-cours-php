@@ -190,7 +190,7 @@ h1, h2, h3
     color: #233402;
 }
 
-.thessoustitre
+.thessoustitre /* Pour afficher le message en haut de la page des thés */
 {
     width:80%;
     margin:auto;
@@ -198,25 +198,46 @@ h1, h2, h3
 	text-align: center
 }
 
-.thes
+.thes /* Largeur et couleur de fond pour le gros de la page des thés */
 {
     width:80%;
     margin:auto;
     background: #e2fcb0;
 }
 
-.textethes
+.textethes /* Utilisé pour regrouper l'ensemble des thés et images présentés */
 {
-    overflow: auto;       
+    overflow: auto;        
     display: inline-block;
-    width:45%;
     vertical-align: top; 
+	width: 100%;
+	text-align: center;
 }
 
-#imagethes
+.fondthe /* Utilisé pour les divs regroupant texte et image d'un thé */
 {
-    display: inline-block;     
-    vertical-align: top;       
+	display: inline-block;
+	background:#d7fa90;
+	vertical-align: top;
+	overflow: auto;
+	width: 45%;
+	padding: 1%;
+	margin: 12px;
 }
 
+
+.descriptionthe /* Utilisé pour les divs contenant le texte descriptif d'un thé */
+{
+	position: relative;
+	float: left;
+	width: 70%;
+	text-align: center;
+}
+
+
+#imagethe 
+{
+	float: left;
+	padding: 15px;
+}
 
