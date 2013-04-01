@@ -4,9 +4,10 @@
     Author     : claire
     Description:
     Problèmes en cours :
-        - pourquoi le header ne colle plus aux bords, BORDEL ???? -> Là je ne vois pas, mais j'aime bien comme ça
-        - décalage menu sur la droite
-                - Le site passe mal sur IE10 : les lettres accentées de la police Pacifico ne s'affichent pas. Je ne peux pas tester sur les versions antérieures d'IE, j'ai peur que ce soit pire.
+        - test de police alternative (Pacifico / merienda) suivant navigateur
+(pour le moment, je test en laissant navigateur gérer. TESTS à faire sous +ieurs nav !)
+
+
 */
 
 /*================================================================================
@@ -76,7 +77,7 @@ nav h1
 
 h1, h2, h3
 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', 'Merienda', cursive;
 }
 
 /*================================================================================
@@ -115,7 +116,6 @@ h1, h2, h3
     display: inline-block;      /* permet positionnement cote a cote*/
     width:45%;
     vertical-align: top;        /* pour que image et txt accueil soit aligné sur le haut (bas par défaut)*/
-    /*border : 1px solid #CCC;*/
 }
 
 .texteaccueil
@@ -125,7 +125,6 @@ h1, h2, h3
     display: inline-block;
     width:45%;
     vertical-align: top; 
-    /*border : 1px solid #CCC;*/
     padding-left: 5%;
 }
 
@@ -153,6 +152,7 @@ h1, h2, h3
     width:80%;
     margin:auto;
     background: #e2fcb0;
+    margin-bottom: 15px;
 }
 
 .textecontact
@@ -201,7 +201,8 @@ h1, h2, h3
     width:80%;
     margin:auto;
     background: #e2fcb0;
-    text-align: center
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .thes /* Largeur et couleur de fond pour le gros de la page des thés */
@@ -213,7 +214,7 @@ h1, h2, h3
 
 .textethes /* Utilisé pour regrouper l'ensemble des thés et images présentés */
 {
-    overflow: auto;        
+    overflow: hidden;        
     display: inline-block;
     vertical-align: top; 
     width: 100%;
@@ -258,7 +259,6 @@ h1, h2, h3
 
 #promotion
 {
-    /*display:inline-block;*/
     width:100%;
     margin:auto;
 }
@@ -289,7 +289,7 @@ h1, h2, h3
 }
 
 #listeThes ul li
-{    /*faire disparaitre les puces*/
+{    
     padding: 0;
     margin: 0;
 }
@@ -319,7 +319,6 @@ h1, h2, h3
 .promo-contenu .txt
 {
     display:inline-block;
-    /*float: right;*/
     width: 80%;    
 }
 
@@ -328,10 +327,10 @@ h1, h2, h3
     margin: 0%;
     padding: 0%;
 }
- 
+
 .promo-contenu a
 {
-    text-decoration: none;      /*enleve le soulignement des liens*/
+    text-decoration: none;    
     color: #333;
     font-weight: 400; 
     font-style: italic;
