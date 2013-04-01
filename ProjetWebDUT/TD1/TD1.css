@@ -7,7 +7,7 @@
         - le contenu est décalé sur la droite, et non centré -> A priori, c'est le "width:80%" de la classe h1accueil qui cause ça. En le passant à 100% c'est bien centré.
         - pourquoi le header ne colle plus aux bords, BORDEL ???? -> Là je ne vois pas, mais j'aime bien comme ça
         - décalage menu sur la droite
-		- Le site passe mal sur IE10 : les lettres accentées de la police Pacifico ne s'affichent pas. Je ne peux pas tester sur les versions antérieures d'IE, j'ai peur que ce soit pire.
+		- Le site passe mal sur IE10 : les lettres accentées de la police Pacifico ne s'affichent pas. Je ne peux pas tester sur les versions antérieures d'IE, j'ai peur que ce soit pire. --> Remplacée par Merienda
 */
 
 body { 
@@ -89,7 +89,7 @@ nav h1
 
 h1, h2, h3
 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Merienda', cursive;
 }
 
 .presentation
