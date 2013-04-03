@@ -169,7 +169,6 @@ h1, h2, h3
     display: inline-block;      /* permet positionnement cote a cote*/
     width:45%;
     vertical-align: top;        /* pour que image et txt accueil soit aligné sur le haut (bas par défaut)*/
-    padding-left: 4.6%;
 }
 
 .contact a
