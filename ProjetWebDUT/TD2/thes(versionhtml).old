@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>La sélection de thés de la Théière</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--[if lt IE 9]>                      
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="TD1.css">
+        <link rel="icon" href="favicon.ico" />
+        <!--        Liens vers des polices web google :
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>-->
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>La Théière</h1>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="thes.html">Nos thés</a></li>
+                    <li><a href="promo.html">Promotions</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="h1thes">
+            <h1> Les meilleurs thés du monde dans une sélection exclusive !</h1>
+            <section class="thessoustitre">
+                <div class="textethes">
+                    <h2>A l'honneur ce mois-ci dans votre boutique : </h2>
+                </div>
+            </section>
+       <section class="thes">
+                    <div class="textethes">
+                        <div class="fondthe">
+                            <div class ="descriptionthe">
+                                <h3>Notre thé vert : </h3>
+                                <p>
+                                    Mao Feng Impérial
+                                </p>
+								<p class="descriptif">
+									Dans toute la Chine, « Mao Feng » désigne un thé de qualité, riche en bourgeons. Cedélicieux Mao Feng, cultivé à une altitude de 300 mètres à partir de théiers Fu Ding, est produit dans une petite plantation familiale passionnée et qui sans relâche cherche à améliorer la qualité de son thé. La plantation est située dans les montagnes du Zhejiang, à une trentaine de kilomètres de Yiwu, et produit ce thé vert dans d’excellentes conditions environnementales, sans utilisation de pesticides. 
+								</p>
+								<p class="descriptif">
+									Prix : 15€ les 100g.
+								</p>
+                            </div>
+                            <img id="imgthepromo" src="Images/the1.png" alt="Mao Feng Impérial"/>
+                        </div>
+                        <div class="fondthe">
+                            <div class="descriptionthe">
+                                <h3>Notre thé noir : </h3>
+                                <p>
+                                    Thé des Lords
+                                </p>
+								<p class="descriptif">
+									Le Thé des Lords est un très bel Earl Grey au parfum de bergamote bien prononcé, agrémenté de pétales de carthame. Le plus bergamoté de tous les Earl Grey.
+									Le Earl Grey est un grand classique anglais, depuis que Charles Grey, comte (earl en anglais) de Falodon et Ministre des Affaires étrangères du Royaume britannique au milieu du XIXème siècle, reçut d'un mandarin chinois une vieille recette consistant à aromatiser son thé avec de la bergamote.
+								</p>
+								<p class="descriptif">
+									Prix : 12€ les 100g.
+								</p>
+                            </div>
+                            <img id="imgthepromo" src="Images/the2.png" alt="Thé des Lords"/>
+                        </div>	
+                        <div class="fondthe">
+                            <div class ="descriptionthe">
+                                <h3>Notre thé blanc : </h3>
+                                <p>
+                                    Thé des Songes
+                                </p>
+								<p class="descriptif">
+									Le Thé des Songes Blanc est une recette créée par Le Palais des Thés, associant le thé blanc, les fleurs et les fruits. Délicatement parfumé, il évoque la rose, la fleur d'oranger et les fruits rouges. Agrémenté de pétales de carthame et de morceaux de fraises, il a pour base un très beau Bai Mu Dan, raffiné et délicat.
+									Création exclusive de La Théière parmi les plus appréciées, il est doux, très léger en théine, et se déguste parfaitement l’après-midi ou même le soir.
+								</p>
+								<p class="descriptif">
+									Prix : 10€ les 100g.
+								</p>
+                            </div>
+                            <img id="imgthepromo" src="Images/the3.png" alt="Thé des Songes"/>
+                        </div>
+                        <div class="fondthe">
+                            <div class="descriptionthe">
+                                <h3>Notre Wu Long : </h3>
+                                <p>
+                                    Bao Zhong Impérial
+                                </p>
+                                <p class="descriptif">
+                                    Il s'agit de l'un des thés les plus célèbres de Taiwan. Son nom signifie en chinois " emballé dans du papier " et rappelle que ce type de thés, avant de fermenter, est enveloppé dans une feuille de papier de coton blanc pour préserver la délicatesse de ses feuilles. Très beau thé à larges feuilles torsadées, qui donne une liqueur jaune paille, à l'arôme fleuri presque poivré, évoquant le narcisse et le jasmin, et qui allie magistralement verdeur et douceur.
+                                </p>
+								<p class="descriptif">
+									Prix : 13€ les 100g.
+								</p>
+                            </div>
+                            <img id="imgthepromo" src="Images/the4.png" alt="Bao Zhong Impérial"/>
+                        </div>
+                        <div class="fondthe">
+                            <div class ="descriptionthe">
+                                <h3>Notre Pu Er : </h3>
+                                <p>
+                                    Bai Yun Shan
+                                </p>
+                                <p class="descriptif">
+                                    Ce Pu Er présente toutes les caractéristiques d'un vieux thé : le bouquet animal et cuir des jeunes Pu Er s'est mué en notes plus terreuses et plus complexes, la cave en terre battue, le cellier et le bois très humide sont quelques-unes des évocations qui viennent à la dégustation. Une belle expérience des vieux Pu Er noirs !
+                                </p>
+								<p class="descriptif">
+									Prix : 13€ les 100g.
+								</p>
+                            </div>
+                            <img id="imgthepromo" src="Images/the5.png" alt="Bai Yun Shan"/>
+                        </div>
+                    </div> 
+                </section>
+        </div>
+    </body>
+</html>

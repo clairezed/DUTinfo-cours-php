@@ -1,0 +1,374 @@
+/* 
+    Document   : TD1
+    Created on : 27 mars 2013, 14:53:50
+    Author     : claire
+    Description:
+    Problèmes en cours :
+        - test de police alternative (Pacifico / merienda) suivant navigateur
+(pour le moment, je test en laissant navigateur gérer. TESTS à faire sous +ieurs nav !)
+
+
+*/
+
+/*================================================================================
+ * GLOBAL - MENU
+ * ===============================================================================*/
+
+body { 
+    /*display: block;*/
+    background-color: #c5f85f;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400; 
+}
+
+
+header
+{
+    width:100%;
+    min-width:400px;
+    background-color: #92d709;
+    /*  position: fixed;         pour ue le menu reste en haut, même en cas défilement page        
+        top:0px;
+        left:0px;*/
+    margin-bottom: 0px;
+}
+
+nav
+{
+    display: inline-block;
+    width: 100%; 
+
+}
+
+nav ul
+{
+    display: inline-block;
+
+}
+
+
+nav li
+{
+    display: inline-block;
+    padding-left: 10px;
+    text-transform: uppercase;      /*menu en lettre cap*/
+}
+
+nav a
+{
+    text-decoration: none;      /*enleve le soulignement des liens*/
+    color: #333;
+    font-weight: 700; 
+}
+
+nav a:hover
+{
+    color: #777;
+}
+
+nav h1
+{
+    display: inline-block;
+    font-size: 2.5em;
+    margin-left: 1%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1, h2, h3
+{
+    font-family: 'Pacifico', 'Merienda', cursive;
+}
+
+/*================================================================================
+ * ACCUEIL
+ * ===============================================================================*/
+
+.h1accueil
+{
+    /*    position:relative;*/
+    /*float:left;*/
+    display:inline-block;
+    /*border : 1px solid #CCC;*/
+    width:100%;
+    margin:auto;
+}
+
+.h1accueil h1{
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+    color: #233402;
+}
+
+
+.presentation
+{
+    width:80%;
+    margin:auto;
+    /*    border : 1px solid #CCC;*/
+    background: #e2fcb0;
+}
+
+#imagetitre
+{
+    /*position: relative;*/
+    display: inline-block;      /* permet positionnement cote a cote*/
+    width:45%;
+    vertical-align: top;        /* pour que image et txt accueil soit aligné sur le haut (bas par défaut)*/
+}
+
+.texteaccueil
+{
+    /*position: relative;*/
+    overflow: auto;         /* en cas de débordement du texte, navigateur gère (barre défilement ar ex)*/
+    display: inline-block;
+    width:45%;
+    vertical-align: top; 
+    padding-left: 5%;
+}
+
+/*================================================================================
+ * CONTACT
+ * ===============================================================================*/
+
+.h1contact
+{
+    display:inline-block;
+    width:100%;
+    margin:auto;
+}
+
+.h1contact h1
+{
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+    color: #233402;
+}
+
+.contact
+{
+    width:80%;
+    margin:auto;
+    background: #e2fcb0;
+    margin-bottom: 15px;
+}
+
+.textecontact
+{
+    overflow: auto;       
+    display: inline-block;
+    width:45%;
+    vertical-align: top; 
+    padding-left: 5%;
+}
+
+#imagecontact
+{
+    display: inline-block;      /* permet positionnement cote a cote*/
+    width:45%;
+    vertical-align: top;        /* pour que image et txt accueil soit aligné sur le haut (bas par défaut)*/
+}
+
+.contact a
+{
+    color:#C79F4B;
+}
+
+/*================================================================================
+ * THES
+ * ===============================================================================*/
+
+.h1thes
+{
+    display:inline-block;
+    width:100%;
+    margin:auto;
+}
+
+.h1thes h1
+{
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+    color: #233402;
+}
+
+.thessoustitre /* Pour afficher le message en haut de la page des thés */
+{
+    width:80%;
+    margin:auto;
+    background: #e2fcb0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.thes /* Largeur et couleur de fond pour le gros de la page des thés */
+{
+    width:80%;
+    margin:auto;
+    background: #e2fcb0;
+}
+
+.textethes /* Utilisé pour regrouper l'ensemble des thés et images présentés */
+{
+    overflow: hidden;        
+    display: inline-block;
+    vertical-align: top; 
+    width: 100%;
+    text-align: center;
+}
+
+.fondthe /* Utilisé pour les divs regroupant texte et image d'un thé */
+{
+    display: inline-block;
+    background:#d7fa90;
+    vertical-align: top;
+    overflow: auto;
+    width: 45%;
+    padding: 1%;
+    margin: 12px;
+}
+
+
+.descriptionthe /* Utilisé pour les divs contenant le texte descriptif d'un thé */
+{
+    position: relative;
+    float: left;
+    width: 70%;
+    text-align: center;
+}
+
+.descriptif /* Utilisé pour les paragraphes contenant le descriptif d'un thé */
+{
+    font-size: 90%;
+    text-align: left;
+}
+
+#imagethe 
+{
+    float: right;
+    padding: 15px;
+}
+
+/*================================================================================
+ * PROMOTIONS
+ * ===============================================================================*/
+
+#promotion
+{
+    width:100%;
+    margin:auto;
+}
+
+#promotion >h1
+{
+    display:inline-block;
+    width:100%;
+    margin:auto;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #233402;
+}
+
+
+#listeThes
+{
+    width:70%;
+    margin:auto;
+}
+
+#listeThes ul
+{
+    list-style-type: none;      /*faire disparaitre les puces*/
+    padding: 0;
+    margin: 0;
+}
+
+#listeThes ul li
+{    
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.promo-contenu
+{
+    display:inline-block;
+    vertical-align: top;
+    width:55%;
+    margin:2%;
+    padding: 2%;
+    background: #e2fcb0;
+    height: 130px;
+}
+
+.imgthepromo
+{
+    float:left;
+    width: 65px;
+    margin-right: 5%;
+    padding-top: 2%;
+    display:inline-block;
+}
+
+.promo-contenu .txt
+{
+    display:inline-block;
+    width: 80%;    
+}
+
+.promo-contenu h3
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+.promo-contenu a
+{
+    text-decoration: none;    
+    color: #333;
+    font-weight: 400; 
+    font-style: italic;
+}
+
+.promo-contenu a:hover
+{
+    color: #777;
+}
+
+
+.promo-prix
+{
+    display:inline-block;
+    vertical-align: top;
+    width:25%;
+    height: 130px;
+    margin:2%;
+    padding: 2%;
+    background: #e2fcb0;
+}
+
+.promo-prix p
+{
+    margin:0%;
+    padding: 0%;
+    text-align: right;
+}
+
+.promo-prix p:first-child
+{
+    font-size: 120%;
+}
+
+.promo-prix p:nth-child(2)
+{
+    color: red;
+    font-size: 350%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+}
