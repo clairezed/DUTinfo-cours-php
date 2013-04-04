@@ -365,7 +365,7 @@ h1, h2, h3
     font-size: 120%;
 }
 
-.promo-prix p .prix-promo
+.prix-promo
 {
     color: red;
     font-size: 350%;
