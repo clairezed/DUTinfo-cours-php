@@ -3,6 +3,7 @@
     <head>
         <title>Les promotions de la Théière, les meilleurs thés au meilleur prix</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />  <!--   test comptabilite IE8-->
         <!--[if lt IE 9]>                      
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -11,17 +12,18 @@
 	</head>
 	
 	<body>
-		<header>
-		<nav>
-			<h1>La Théière</h1>
-			<ul>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="thes.php">Nos thés</a></li>
-				<li><a href="promo.html">Promotions</a></li>
-				<li><a href="contact.html">Nous contacter</a></li>
-			</ul>
-		</nav>
-	</header>
+        <div class="header">
+            <div class="nav">
+                <h1>La Théière</h1>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="thes.php">Nos thés</a></li>
+                    <li><a href="promo.html">Promotions</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
+	
 	<div class="h1thes">
 		<h1> Les meilleurs thés du monde dans une sélection exclusive !</h1>
 		<section class="thessoustitre">
