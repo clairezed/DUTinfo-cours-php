@@ -304,7 +304,7 @@ h1, h2, h3
     margin:2%;
     padding: 2%;
     background: #e2fcb0;
-    height: 130px;
+    /*height: 130px;*/
 }
 
 .imgthepromo
@@ -319,7 +319,7 @@ h1, h2, h3
 .promo-contenu .txt
 {
     display:inline-block;
-    width: 80%;    
+    width: 70%;    
 }
 
 .promo-contenu h3
@@ -365,7 +365,7 @@ h1, h2, h3
     font-size: 120%;
 }
 
-.promo-prix p:nth-child(2)
+.promo-prix p .prix-promo
 {
     color: red;
     font-size: 350%;
