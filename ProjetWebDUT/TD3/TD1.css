@@ -373,3 +373,47 @@ h1, h2, h3
     margin-bottom: 3%;
 
 }
+
+/*================================================================================
+ * FORMULAIRES
+ * ===============================================================================*/
+ 
+.fomulaireaccueil 
+{
+	display:inline-block;
+    width:100%;
+    margin:auto;
+}
+
+.formulaireaccueil h1{
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+    color: #233402;
+}
+ 
+.formulaire 
+{
+    padding: 10px;
+    background:#d7fa90;
+}
+
+.formulaire2 {
+    padding: 10px;
+	background:#e2fcb0;
+	margin:15px;
+	width:500px;
+}
+ 
+.label 
+{
+    float: left;
+    width: 150px;
+    margin: 3px 0px 0px 0px;
+}
+
+.champ 
+{
+    margin: 3px 3px 0px 0px;
+    border: 1px #999 solid;
+}

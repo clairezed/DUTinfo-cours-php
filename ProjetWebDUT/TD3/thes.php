@@ -34,7 +34,7 @@
 		<section class="thes">
 			<div class="textethes">
 					<?php
-						require 'params.php';
+						require 'Admin/bin/params.php';
 						mysql_connect($host,$user,$password) or die('Erreur de connexion au SGBD.');
 						mysql_query("SET NAMES 'utf8'");
 						mysql_select_db($base) or die('La base de données n\'existe pas');
