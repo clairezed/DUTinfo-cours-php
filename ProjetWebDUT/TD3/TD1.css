@@ -81,6 +81,12 @@ h1, h2, h3
     font-family: "Georgia Bold", "Times New Roman Bold", Georgia, cursive;
 }
 
+.icon
+{
+    height: 40px;
+    width: 40px;
+}
+
 /*================================================================================
  * ACCUEIL
  * ===============================================================================*/
@@ -415,4 +421,38 @@ h1, h2, h3
 {
     margin: 3px 3px 0px 0px;
     border: 1px #999 solid;
+}
+
+/*================================================================================
+ * TABLES
+ * ===============================================================================*/
+
+
+.tabThes
+{
+    margin-top: 10px;
+}
+
+
+table, th, td
+{
+border: 1px solid black;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+th, td
+{
+text-align:left;
+padding: 1%;
+}
+
+th
+{
+font-size: 1.2em;
+background-color:#A7C942;
+color:#ffffff;
 }
