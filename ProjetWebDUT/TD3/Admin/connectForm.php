@@ -11,7 +11,7 @@
         <link rel="icon" href="favicon.ico" />
 	</head>
 	<body>
-		<div class=".fomulaireaccueil">
+		<div class="formulaireaccueil">
 			<h1>Connexion</h1>
 			<div class="formulaire">
 					<form action="connect.php" method="post">
