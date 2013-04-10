@@ -28,7 +28,8 @@ if (!isset($_SESSION['admin']) && !$_SESSION['admin'] == true)
     mysql_close();
     ?>
     <head>
-
+        <title>Modification thés</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="../TD1.css">
     </head>
     <body>
@@ -36,7 +37,7 @@ if (!isset($_SESSION['admin']) && !$_SESSION['admin'] == true)
         <form action="update.php" method="post">
             TYPE : <input name="type" type="text" value="<?php echo $type; ?>"/><br/>
             NOM : <input name="nom" type="text" value="<?php echo $nom; ?>"/><br/>
-            DESCRIPTION : <input name="description" type="text" value="<?php echo $description; ?>"/><br/>
+            DESCRIPTION : <textarea name="description" rows ="10" cols="20" type="text" value="<?php echo $description; ?>"/></textarea><br/>
             PRIX : <input name="prix" type="text" value="<?php echo $prix; ?>"/><br/>
             QUANTITE : <input name="quantite" type="text" value="<?php echo $quantite; ?>"/><br/>
             LIEN IMAGE : <input name="image" type="text" value="<?php echo $image; ?>"/><br/>

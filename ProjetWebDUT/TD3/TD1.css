@@ -384,7 +384,7 @@ h1, h2, h3
  * FORMULAIRES
  * ===============================================================================*/
  
-.fomulaireaccueil 
+.formulaireaccueil 
 {
 	display:inline-block;
     width:100%;
@@ -402,12 +402,13 @@ h1, h2, h3
 {
     padding: 10px;
     background:#d7fa90;
+    width: 400px;
 }
 
 .formulaire2 {
     padding: 10px;
 	background:#e2fcb0;
-	margin:15px;
+	margin:auto;
 	width:500px;
 }
  
@@ -415,13 +416,28 @@ h1, h2, h3
 {
     float: left;
     width: 150px;
-    margin: 3px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
+    vertical-align: top;
 }
 
 .champ 
 {
-    margin: 3px 3px 0px 0px;
+    margin: 5px 3px 0px 0px;
     border: 1px #999 solid;
+}
+
+
+.tabThes, .ajout
+{
+    margin: 50px;
+}
+
+.formButton
+{
+    background: #92d709;
+    padding:2%;
+    margin-top: 10px;
+    width:130px;
 }
 
 /*================================================================================
@@ -429,10 +445,7 @@ h1, h2, h3
  * ===============================================================================*/
 
 
-.tabThes
-{
-    margin-top: 10px;
-}
+
 
 
 table, th, td
@@ -448,12 +461,13 @@ table
 th, td
 {
 text-align:left;
-padding: 1%;
+padding: 5px;
 }
 
 th
 {
 font-size: 1.2em;
-background-color:#A7C942;
+text-align:center;
+background-color:#92D709;
 color:#ffffff;
 }
