@@ -48,9 +48,11 @@
 							$description = $a->description;
 							$prix = $a->prix;
 							$quantite = $a->quantite;
+							$type = $a->type;
+							$image = $a->image;
 							echo"<div class=\"fondthe\">
 								<div class =\"descriptionthe\">
-									<h3>Thé numéro : $id </h3>
+									<h3> Notre thé $type </h3>
 									<p>
 										$nom
 									</p>
@@ -64,6 +66,7 @@
 										Quantité en stock : $quantite
 									</p>
 								</div>
+								<img id=\"imgthepromo\" src=\"$image\" />
 							</div>";
 						}
 						echo '</table>';
