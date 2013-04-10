@@ -397,19 +397,27 @@ h1, h2, h3
     padding: 2%;
     color: #233402;
 }
+
+.formulaireConnexion
+{
+    padding: 10px;
+    background:#d7fa90;
+    width: 500px;
+	margin:auto;
+}
  
 .formulaire 
 {
     padding: 10px;
     background:#d7fa90;
-    width: 400px;
+    width: 500px;
 }
 
 .formulaire2 {
     padding: 10px;
 	background:#e2fcb0;
 	margin:auto;
-	width:500px;
+	width:400px;
 }
  
 .label 
