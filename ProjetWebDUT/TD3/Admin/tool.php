@@ -27,35 +27,36 @@ if (!isset($_SESSION['admin']) && $_SESSION['admin'] == false)
                     </div>
                     <div class="ajout">
                         <h2>Ajouter un thé</h2>
-                        <div class="formulaire">
+                        <!--<div class="formulaire">-->
                         <form action="add.php" method="post">
-                            <p class="label">
-                                TYPE : 
-                            </p>
-                            <input class="champ" name="type" type="text"/><br/>
-                             <p class="label">
-                                NOM :  
-                            </p>
-                            <input class="champ" name="nom" type="text"/><br/>
-                             <p class="label">
-                                DESCRIPTION : 
-                            </p>
-                            <input class="champ" name="description" type="text"/><br/>
-                             <p class="label">
-                                PRIX : 
-                            </p>
-                            <input class="champ" name="prix" type="text"/><br/>
-                             <p class="label">
-                                QUANTITE : 
-                            </p>
-                            <input name="quantite" type="text"/><br/>
-                             <p class="label">
-                                LIEN IMAGE : 
-                            </p>
-                            <input class="champ" name="image" type="text"/><br/>
+                            <div class="formulaire2">
+                                <p class="label">TYPE :</p>
+                                <input class="champ" name="type" type="text"/><br/>
+                            </div>
+                            <div class="formulaire2">
+                                <p class="label">NOM :</p>
+                                <input class="champ" name="nom" type="text"/><br/>
+                            </div>
+                            <div class="formulaire2">
+                                <p class="label">DESCRIPTION : </p>
+                                <textarea class="champ" name="description" type="text"/></textarea><br/>
+                            </div>
+                            <div class="formulaire2">
+                                <p class="label">PRIX :</p>
+                                <input class="champ" name="prix" type="text"/><br/>
+                            </div>
+                            <div class="formulaire2">
+                                <p class="label">QUANTITE :</p>
+                                <input name="quantite" type="text"/><br/>
+                            </div>
+                            <div class="formulaire2">
+                                <p class="label">LIEN IMAGE : </p>
+                                <input class="champ" name="image" type="text"/><br/>
+                            </div>
+
                             <input class="formButton" type="submit" value="Ajouter"/><br/>
                         </form>
-                        </div>
+                        <!--</div>-->
                     </div>
 
 
