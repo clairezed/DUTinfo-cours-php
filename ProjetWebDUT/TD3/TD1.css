@@ -479,3 +479,8 @@ text-align:center;
 background-color:#92D709;
 color:#ffffff;
 }
+
+a img
+{
+border: none;
+}
