@@ -14,7 +14,7 @@ if (!isset($_SESSION['admin']) && !$_SESSION['admin'] == true)
     require 'bin/params.php';
     mysql_connect($host, $user, $password) or die('Erreur de connexion au SGBD.');
     mysql_query("SET NAMES 'utf8'");
-    mysql_select_db($base) or die('La base de donn�es n\'existe pas');
+    mysql_select_db($base) or die('La base de données n\'existe pas');
     $query = "SELECT * from thes WHERE id_the=$id";
     $r = mysql_query($query);
     if ($a = mysql_fetch_object($r)) {
