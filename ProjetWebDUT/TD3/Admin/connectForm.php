@@ -24,7 +24,7 @@
 							<input class="champ" name="password" type="password" /><br/>
 						</div>
 						<div style = "text-align:center ; margin-top:10px">
-							<input type="submit" value="Se connecter"/><br/>
+							<input class="formButton" type="submit" value="Se connecter"/><br/>
 						</div>
 					</form>
 			</section>
