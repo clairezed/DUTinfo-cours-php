@@ -44,16 +44,16 @@ require 'header.php'
                         <form action="uploadImage.php" enctype="multipart/form-data" method="post">
                             <div class="formulaire3">
                                 <p class="label">Image : </p>
-                                <input name="datafile" size="30" type="file"/>
-                                <input type="hidden" name="page" value="<?php echo"$page" ?>"/> <br/>
+                                <input name="datafile" size="30" type="file">
+                                <input type="hidden" name="page" value="<?php echo"$page" ?>"> <br/>
                             </div>  
                             <input type="submit" value="modifier l'image">
                         </form>
                         
                         <form action="deleteImage.php" method="post">
                               <div class="formulaire3">
-                                  <input type="hidden" name="page" value="<?php echo"$page" ?>"/> <br/>
-                                  <input type="submit" value="supprimer l'image"/>
+                                  <input type="hidden" name="page" value="<?php echo"$page" ?>"> <br/>
+                                  <input type="submit" value="supprimer l'image">
                               </div>  
                         </form>
                     </div>
