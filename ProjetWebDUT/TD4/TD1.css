@@ -420,10 +420,9 @@ h1, h2, h3
 	width:400px;
 }
 
-.formulaire_editPages {
+.formulaire3 {
     padding: 10px;
     background:#e2fcb0;
-    margin:auto;
     width:800px;
 }
  
@@ -453,6 +452,13 @@ h1, h2, h3
     padding:2%;
     margin-top: 10px;
     width:130px;
+}
+
+.apercu
+{
+    width:80%;
+    border: 1px black solid;
+    margin: auto;
 }
 
 /*================================================================================
