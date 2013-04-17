@@ -416,9 +416,9 @@ h1, h2, h3
 
 .formulaire2 {
     padding: 10px;
-	background:#e2fcb0;
-	margin:auto;
-	width:400px;
+    background:#e2fcb0;
+/*    margin:auto;*/
+    width:400px;
 }
 
 .formulaire3 {
@@ -467,7 +467,10 @@ h1, h2, h3
  * ===============================================================================*/
 
 
-
+a img
+{
+border: none;
+}
 
 
 table, th, td

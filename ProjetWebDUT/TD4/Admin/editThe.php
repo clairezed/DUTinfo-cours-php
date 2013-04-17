@@ -33,7 +33,7 @@ require 'header.php';
                                 <input name="quantite" type="text"/><br/>
                             </div>
                             <div class="formulaire2">
-                                <p class="label">LIEN IMAGE : </p>
+                                <p class="label">IMAGE : </p>
                                 <input class="champ" name="image" type="text"/><br/>
                             </div>
 
