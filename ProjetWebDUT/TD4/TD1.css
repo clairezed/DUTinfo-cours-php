@@ -419,6 +419,13 @@ h1, h2, h3
 	margin:auto;
 	width:400px;
 }
+
+.formulaire_editPages {
+    padding: 10px;
+    background:#e2fcb0;
+    margin:auto;
+    width:800px;
+}
  
 .label 
 {
