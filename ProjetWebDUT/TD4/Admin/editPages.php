@@ -9,6 +9,7 @@ if (!isset($_SESSION['admin']) && $_SESSION['admin'] == false)
 require 'header.php'
 ?>
 
+
 <?php
 if (isset($_GET['page']))
     $page = $_GET['page'];
@@ -30,11 +31,11 @@ if ($a = mysql_fetch_object($r)) {
 <div class="ajout">
     <h2>Modifier une page</h2>
     <form action="updatePages.php" method="post">
-        <div class="formulaire_editPages">
+        <div class="formulaire3">
             <p class="label">Titre :</p>
             <input class="champ" name="titre" type="text" value="<?php echo"$titre" ?>"/><br/>
         </div>
-        <div class="formulaire_editPages">
+        <div class="formulaire3">
             <p class="label">Texte :</p>
             <textarea name="texte" cols="50" rows="10"><?php echo"$texte" ?></textarea>
         </div>
@@ -43,16 +44,39 @@ if ($a = mysql_fetch_object($r)) {
     </form>
 
     <form action="uploadImage.php" enctype="multipart/form-data" method="post">
-        <div class="formulaire_editPages">
-            <p class="label">Image
+        <div class="formulaire3">
+            <p class="label">Image : </p>
+            <input name="datafile" size="30" type="file">
+            <input type="hidden" name="page" value="<?php echo"$page" ?>"> <br/>
+        </div>  
+        <input type="submit" value="modifier l'image">
+    </form>
+
+    <form action="deleteImage.php" method="post">
+        <div class="formulaire3">
+            <input type="hidden" name="page" value="<?php echo"$page" ?>"> <br/>
+            <input type="submit" value="supprimer l'image">
         </div>  
     </form>
 </div>
 
-<script>
-    CKEDITOR.replace('texte', {
-        customConfig: '../ckeditor_config.js'
-    });
-</script>
+<div class="apercu">
+    <div class="h1accueil">
+        <h1> <?php echo "$titre" ?></h1>
+        <section class="presentation">
+            <img id="imagetitre" src="<?php echo "$image" ?>">
+            <div class="texteaccueil">
+                <!--<h2>Grâce à nous, trouvez le thé qui vous correspond !</h2>-->
+                <p><?php echo "$texte" ?></p>
+                <!--<p>Jetez un oeil !</p>-->
+            </div>
+        </section>
+    </div>
+    <script>
+        CKEDITOR.replace('texte', {
+            customConfig: '../ckeditor_config.js'
+        });
+    </script>
 </body>
+
 </html>

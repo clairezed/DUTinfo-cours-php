@@ -27,7 +27,7 @@ if ($a = mysql_fetch_object($r)) {
     <div class="h1accueil">
         <h1> <?php echo "$titre" ?></h1>
     <section class="presentation">
-        <img id="imagetitre" src="<?php echo "$image" ?>">
+        <img id="imagetitre" src="Admin/<?php echo "$image" ?>">
         <div class="texteaccueil">
             <!--<h2>Grâce à nous, trouvez le thé qui vous correspond !</h2>-->
             <p><?php echo "$texte" ?></p>
