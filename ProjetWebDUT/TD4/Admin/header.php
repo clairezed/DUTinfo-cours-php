@@ -16,7 +16,7 @@
                             <ul>
                                 <li><a href="editThe.php">Modifier Thés</a></li>
                                 <li><a href="editPages.php?page=1">Modifier Accueil</a></li>
-                                <li><a href="editPages.php?page=2">Modifier Contact</a></li>
+                                <li><a href="editPages.php?page=4">Modifier Contact</a></li>
                                 <li><a href="disconnect.php">SE DECONNECTER</a></li>
                             </ul>
                         </div>
