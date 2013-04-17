@@ -42,11 +42,12 @@ require 'header.php'
                         </form>
                         
                         <form action="uploadImage.php" enctype="multipart/form-data" method="post">
-                              <div class="formulaire3">
-                                  <p class="label">Image : </p>
-                                  <input name="datafile" size="30" type="file"/>
-                                  <input type="hidden" name="page" value="<?php echo"$page" ?>"/> <br/>
-                              </div>  
+                            <div class="formulaire3">
+                                <p class="label">Image : </p>
+                                <input name="datafile" size="30" type="file"/>
+                                <input type="hidden" name="page" value="<?php echo"$page" ?>"/> <br/>
+                            </div>  
+                            <input type="submit" value="modifier l'image">
                         </form>
                         
                         <form action="deleteImage.php" method="post">
@@ -59,16 +60,15 @@ require 'header.php'
 
                     <div class="apercu">
                         <div class="h1accueil">
-                            <h1> Bienvenue sur le meilleur des sites de thés !</h1>
+                            <h1> <?php echo "$titre" ?></h1>
                             <section class="presentation">
-                                <img id="imagetitre" src="Images/green_tea.jpg">
+                                <img id="imagetitre" src="<?php echo "$image" ?>">
                                 <div class="texteaccueil">
-                                    <h2>Grâce à nous, trouvez le thé qui vous correspond !</h2>
-                                    <p>Notre connaissance de ouf du thé nous permet de savoir même avant vous ce que vous allez aimer.</p>
-                                    <p>Jetez un oeil !</p>
+                                    <!--<h2>Grâce à nous, trouvez le thé qui vous correspond !</h2>-->
+                                    <p><?php echo "$texte" ?></p>
+                                    <!--<p>Jetez un oeil !</p>-->
                                 </div>
                             </section>
                         </div>
-                    </div>
                 </body>
 </html>

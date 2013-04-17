@@ -17,7 +17,7 @@ if (isset($_SESSION['admin']) && $_SESSION['admin'] == true) {
                 else if ($type == 3)
                     $ext = '.png';
 
-                $f = 'images/image' . $page;
+                $f = 'Images/image' . $page;
                 if (move_uploaded_file($_FILES['datafile']['tmp_name'], $f . $ext)) { //$f= nom image sans extension / $ext = extension
                     // Modifier les données dans la base de données :
                     require 'bin/params.php';
