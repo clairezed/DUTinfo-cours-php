@@ -32,10 +32,12 @@ require 'header.php';
                                 <p class="label">QUANTITE :</p>
                                 <input name="quantite" type="text"/><br/>
                             </div>
-                            <div class="formulaire2">
+<!--                            <div class="formulaire2">
                                 <p class="label">IMAGE : </p>
                                 <input class="champ" name="image" type="text"/><br/>
-                            </div>
+                            </div>-->
+                            
+                            <input type="hidden" name="image" value="Images/defautThe.png">
 
                             <input class="formButton" type="submit" value="Ajouter"/><br/>
                         </form>

@@ -14,19 +14,19 @@
 		<div class="formulaireaccueil">
 			<h1>Connexion</h1>
 			<div class="formulaireConnexion">
-					<form action="connect.php" method="post">
-						<div class="formulaire2">
-							<p class ="label">Login : </p>
-							<input class="champ" name="login" type="text" />
-						</div>
-						<div class="formulaire2">
-							<p class ="label">Mot de passe : </p>
-							<input class="champ" name="password" type="password" /><br/>
-						</div>
-						<div style = "text-align:center ; margin-top:10px">
-							<input type="submit" value="Se connecter"/><br/>
-						</div>
-					</form>
+                                <form action="connect.php" method="post">
+                                    <div class="formulaireConnexion2">
+                                            <p class ="label">Login : </p>
+                                            <input class="champ" name="login" type="text" />
+                                    </div>
+                                    <div class="formulaireConnexion2">
+                                            <p class ="label">Mot de passe : </p>
+                                            <input class="champ" name="password" type="password" /><br/>
+                                    </div>
+                                    <div style = "text-align:center ; margin-top:10px">
+                                            <input class="formButton" type="submit" value="Se connecter"/><br/>
+                                    </div>
+                                </form>
 			</section>
 		</div>
 	</body>

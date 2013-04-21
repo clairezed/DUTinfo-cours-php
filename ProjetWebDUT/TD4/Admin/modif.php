@@ -63,15 +63,46 @@ if (!isset($_SESSION['admin']) && !$_SESSION['admin'] == true)
                             <p class="label">QUANTITE :</p>
                             <input name="quantite" type="text" value="<?php echo $quantite; ?>"/><br/>
                         </div>
-                        <div class="formulaire2">
+<!--                        <div class="formulaire2">
                             <p class="label">LIEN IMAGE : </p>
                             <input name="image" type="text" value="<?php echo $image; ?>"/><br/>
-                        </div>
-                        <input class="formButton" type="submit" value="Modifier"/><br/>
+                        </div>-->
+                        <input class="formButton" type="submit" value="Modifier"/>
                         <input class="formButton" type="button" value="Annuler" onclick="location.href='index.php'"/><br/>
                      
                         <input type="hidden" name="id" value="<?php echo $id; ?>" />
                     </form>
+                    <form action="uploadImageThe.php" enctype="multipart/form-data" method="post">
+                        <div class="formulaire2">
+                            <p class="label">Image : </p>
+                            <input name="datafile" size="30" type="file">
+                            <input type="hidden" name="id" value="<?php echo"$id" ?>"> <br/>
+                        </div>  
+                        <input class="formButton" type="submit" value="modifier l'image">
+                    </form>
+                    
+                    
+                    <div class="apercu" style="text-align:center">
+                        <h3>Apercu</h3>
+                        <div class="fondthe">
+                            <div class="descriptionthe">
+                                <h3> Notre thé <?php echo "$type" ?> </h3>
+                                <p>
+                                    <?php echo "$nom" ?>
+                                </p>
+                                <p class="descriptif">
+                                    <?php echo "$description" ?>
+                                </p>
+                                <p class="descriptif">
+                                   Prix : <?php echo "$prix" ?> € les 100g 
+                                </p>
+                                <p class="descriptif">
+                                    Quantité en stock = <?php echo "$quantite" ?>
+                                </p>
+                            </div>
+                            <img id="imgthepromo" src="<?php echo "$image" ?>" />
+                        </div>
+                    </div>
 
 
                 </body>

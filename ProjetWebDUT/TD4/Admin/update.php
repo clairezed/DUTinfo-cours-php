@@ -17,7 +17,7 @@ if (isset($_SESSION['admin']) && $_SESSION['admin'] == true) {
 //echo $query;
     mysql_query($query);
     mysql_close();
-    header('location:tool.php');
+    header('location:editThe.php');
 }
 ?>
 

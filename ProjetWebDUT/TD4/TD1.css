@@ -404,9 +404,16 @@ h1, h2, h3
     padding: 10px;
     background:#d7fa90;
     width: 500px;
-	margin:auto;
+    margin:auto;
 }
- 
+
+.formulaireConnexion2 {
+    padding: 10px;
+    background:#e2fcb0;
+    margin:auto;
+    width:400px;    
+}
+
 .formulaire 
 {
     padding: 10px;
@@ -452,6 +459,7 @@ h1, h2, h3
     background: #92d709;
     padding:2%;
     margin-top: 10px;
+    margin-bottom: 10px;
     width:130px;
 }
 

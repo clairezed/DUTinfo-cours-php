@@ -44,7 +44,7 @@ require 'header.php'
 										Quantité en stock : $quantite
 									</p>
 								</div>
-								<img id=\"imgthepromo\" src=\"$image\" />
+								<img id=\"imgthepromo\" src=\"Admin/$image\" />
 							</div>";
 						}
 						echo '</table>';
