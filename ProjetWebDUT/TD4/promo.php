@@ -8,7 +8,7 @@ require 'header.php'
                 <ul>
                     <li>
                         <div class="promo-contenu">
-                            <img class="imgthepromo" src="Images/the5.png" alt="Bai Yun Shan"/>
+                            <img class="imgthepromo" src="Admin/Images/the5.png" alt="Bai Yun Shan"/>
                             <div class="txt">
                                 <h3>Bai Yun Shan</h3>
                                 <p class="descriptif">Ce Pu Er présente toutes les caractéristiques d'un vieux thé  : le bouquet animal et cuir ...</p>
@@ -23,7 +23,7 @@ require 'header.php'
                     </li>
                     <li>
                         <div class="promo-contenu">
-                            <img class="imgthepromo" src="Images/the4.png" alt="Bao Zhong Impérial"/>
+                            <img class="imgthepromo" src="Admin/Images/the4.png" alt="Bao Zhong Impérial"/>
                             <div class="txt">
                                 <h3>Bao Zhong Impérial</h3>
                                 <p class="descriptif">Il s'agit de l'un des thés les plus célèbres de Taiwan. Son nom signifie ...</p>
