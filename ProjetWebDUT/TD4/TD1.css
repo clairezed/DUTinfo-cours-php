@@ -446,6 +446,8 @@ h1, h2, h3
 {
     margin: 5px 3px 0px 0px;
     border: 1px #999 solid;
+    /*// MODIF*/
+    width:400px;                    
 }
 
 
@@ -468,6 +470,14 @@ h1, h2, h3
     width:80%;
     border: 1px black solid;
     margin: auto;
+}
+
+#ckeditor-area
+{
+    margin: 5px 3px 0px 150px;
+    /*border: 1px #999 solid;*/
+    /*// MODIF*/
+    width:600px;  
 }
 
 /*================================================================================

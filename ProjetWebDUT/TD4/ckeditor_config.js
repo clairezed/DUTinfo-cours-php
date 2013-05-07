@@ -35,4 +35,9 @@ CKEDITOR.editorConfig = function( config ) {
 
 	// Make dialogs simpler.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
+        
+        // Custom config Claire
+        config.lang="fr";
+        config.width = '75%';
+        config.height = '300px';
 };

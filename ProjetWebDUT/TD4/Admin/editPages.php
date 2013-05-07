@@ -38,7 +38,7 @@ if ($a = mysql_fetch_object($r)) {
         <div class="formulaire3">
             <p class="label">Texte :</p>
             <div id="ckeditor-area">
-                <textarea name="texte" cols="40" rows="20"><?php echo"$texte" ?></textarea>
+                <textarea name="texte" cols="40" rows="10"><?php echo"$texte" ?></textarea>
             </div>
         </div>
         <input type="hidden" name="page" value="<?php echo"$page" ?>"/>
