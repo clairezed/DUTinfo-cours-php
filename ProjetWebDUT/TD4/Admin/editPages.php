@@ -37,7 +37,9 @@ if ($a = mysql_fetch_object($r)) {
         </div>
         <div class="formulaire3">
             <p class="label">Texte :</p>
-            <textarea name="texte" cols="50" rows="10"><?php echo"$texte" ?></textarea>
+            <div id="ckeditor-area">
+                <textarea name="texte" cols="40" rows="20"><?php echo"$texte" ?></textarea>
+            </div>
         </div>
         <input type="hidden" name="page" value="<?php echo"$page" ?>"/>
         <input class="formButton" type="submit" value="Modifier"/><br/>
@@ -45,15 +47,15 @@ if ($a = mysql_fetch_object($r)) {
     <form action="uploadImage.php" enctype="multipart/form-data" method="post">
         <div class="formulaire3">
             <p class="label">Image : </p>
-            <input name="datafile" size="30" type="file">
+            <input  name="datafile" size="30" type="file">
             <input type="hidden" name="page" value="<?php echo"$page" ?>"> <br/>
         </div>  
         <input class="formButton" type="submit" value="modifier l'image">
     </form>
 
     <form action="deleteImage.php" method="post">
-            <input type="hidden" name="page" value="<?php echo"$page" ?>"> <br/>
-            <input class="formButton" type="submit" value="supprimer l'image">
+        <input type="hidden" name="page" value="<?php echo"$page" ?>"> <br/>
+        <input class="formButton" type="submit" value="supprimer l'image">
     </form>
 </div>
 
@@ -68,11 +70,11 @@ if ($a = mysql_fetch_object($r)) {
         </section>
     </div>
 </div>
-    <script>
-        CKEDITOR.replace('texte', {
-            customConfig: '../ckeditor_config.js'
-        });
-    </script>
+<script>
+    CKEDITOR.replace('texte', {
+        customConfig: '../ckeditor_config.js'
+    });
+</script>
 </body>
 
 </html>

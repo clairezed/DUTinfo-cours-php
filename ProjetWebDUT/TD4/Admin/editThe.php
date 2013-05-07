@@ -30,7 +30,7 @@ require 'header.php';
                             </div>
                             <div class="formulaire2">
                                 <p class="label">QUANTITE :</p>
-                                <input name="quantite" type="text"/><br/>
+                                <input class="champ" name="quantite" type="text"/><br/>
                             </div>
 <!--                            <div class="formulaire2">
                                 <p class="label">IMAGE : </p>

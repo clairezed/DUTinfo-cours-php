@@ -8,13 +8,18 @@ if (!isset($_SESSION['admin']) && !$_SESSION['admin'] == true)
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+    
+<?php
+require 'header.php'
+?>
+    
 
     <?php
     $id = $_GET['id'];
     require 'bin/params.php';
     mysql_connect($host, $user, $password) or die('Erreur de connexion au SGBD.');
     mysql_query("SET NAMES 'utf8'");
-    mysql_select_db($base) or die('La base de donn�es n\'existe pas');
+    mysql_select_db($base) or die('La base de données n\'existe pas');
     $query = "SELECT * from thes WHERE id_the=$id";
     $r = mysql_query($query);
     if ($a = mysql_fetch_object($r)) {
@@ -27,7 +32,7 @@ if (!isset($_SESSION['admin']) && !$_SESSION['admin'] == true)
     }
     mysql_close();
     ?>
-    <head>
+<!--    <head>
         <title>Modification thés</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
             <link rel="stylesheet" type="text/css" href="../TD1.css">
@@ -40,7 +45,7 @@ if (!isset($_SESSION['admin']) && !$_SESSION['admin'] == true)
                                 <li><a href="disconnect.php">SE DECONNECTER</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div>-->
                     <h2>Modification</h2>
                     <form action="update.php" method="post">
                         <div class="formulaire2">
