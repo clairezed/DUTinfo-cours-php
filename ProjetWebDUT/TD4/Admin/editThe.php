@@ -12,23 +12,25 @@ require 'header.php';
                         <h2>Ajouter un thé</h2>
                         <!--<div class="formulaire">-->
                         <form action="add.php" method="post">
-                            <div class="formulaire2">
+                            <div class="formulaire3">
                                 <p class="label">TYPE :</p>
                                 <input class="champ" name="type" type="text"/><br/>
                             </div>
-                            <div class="formulaire2">
+                            <div class="formulaire3">
                                 <p class="label">NOM :</p>
                                 <input class="champ" name="nom" type="text"/><br/>
                             </div>
-                            <div class="formulaire2">
+                            <div class="formulaire3">
                                 <p class="label">DESCRIPTION : </p>
-                                <textarea class="champ" name="description" type="text"/></textarea><br/>
+                                <div id="ckeditor-area">
+                                    <textarea class="champ" name="description" type="text"/></textarea><br/>
+                                </div>
                             </div>
-                            <div class="formulaire2">
+                            <div class="formulaire3">
                                 <p class="label">PRIX :</p>
                                 <input class="champ" name="prix" type="text"/><br/>
                             </div>
-                            <div class="formulaire2">
+                            <div class="formulaire3">
                                 <p class="label">QUANTITE :</p>
                                 <input class="champ" name="quantite" type="text"/><br/>
                             </div>
@@ -78,7 +80,13 @@ require 'header.php';
 
                     </div>
 
-                </body>
+<script>
+    CKEDITOR.replace('description', {
+        customConfig: '../ckeditor_config.js'
+    });
+</script>
+
+</body>
 
 
-                </html>
+</html>

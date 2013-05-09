@@ -9,6 +9,6 @@ if(isset($_SESSION['admin']) && $_SESSION['admin']==true)
 	$query = "delete from thes where id_the = '$id_the'";
 	mysql_query($query);
 	mysql_close();
-	header('location:tool.php');
+	header('location:editThe.php');
 }
 ?>

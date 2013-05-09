@@ -32,83 +32,78 @@ require 'header.php'
     }
     mysql_close();
     ?>
-<!--    <head>
-        <title>Modification thés</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-            <link rel="stylesheet" type="text/css" href="../TD1.css">
-                </head>
-                <body>
-                    <div class="header">
-                        <div class="nav">
-                            <h1>La Théière - Administration</h1>
-                            <ul>
-                                <li><a href="disconnect.php">SE DECONNECTER</a></li>
-                            </ul>
-                        </div>
-                    </div>-->
-                    <h2>Modification</h2>
-                    <form action="update.php" method="post">
-                        <div class="formulaire2">
-                            <p class="label">TYPE :</p>
-                            <input name="type" type="text" value="<?php echo $type; ?>"/><br/>
-                        </div>
-                        <div class="formulaire2">
-                            <p class="label">NOM :</p>
-                            <input name="nom" type="text" value="<?php echo $nom; ?>"/><br/>
-                        </div>
-                        <div class="formulaire2">
-                            <p class="label">DESCRIPTION : </p>
-                            <textarea name="description" type="text"/><?php echo $description; ?></textarea><br/>
-                        </div>
-                        <div class="formulaire2">
-                            <p class="label">PRIX : </p>
-                            <input name="prix" type="text" value="<?php echo $prix; ?>"/><br/>
-                        </div>
-                        <div class="formulaire2">
-                            <p class="label">QUANTITE :</p>
-                            <input name="quantite" type="text" value="<?php echo $quantite; ?>"/><br/>
-                        </div>
-<!--                        <div class="formulaire2">
-                            <p class="label">LIEN IMAGE : </p>
-                            <input name="image" type="text" value="<?php echo $image; ?>"/><br/>
-                        </div>-->
-                        <input class="formButton" type="submit" value="Modifier"/>
-                        <input class="formButton" type="button" value="Annuler" onclick="location.href='index.php'"/><br/>
-                     
-                        <input type="hidden" name="id" value="<?php echo $id; ?>" />
-                    </form>
-                    <form action="uploadImageThe.php" enctype="multipart/form-data" method="post">
-                        <div class="formulaire2">
-                            <p class="label">Image : </p>
-                            <input name="datafile" size="30" type="file">
-                            <input type="hidden" name="id" value="<?php echo"$id" ?>"> <br/>
-                        </div>  
-                        <input class="formButton" type="submit" value="modifier l'image">
-                    </form>
-                    
-                    
-                    <div class="apercu" style="text-align:center">
-                        <h3>Apercu</h3>
-                        <div class="fondthe">
-                            <div class="descriptionthe">
-                                <h3> Notre thé <?php echo "$type" ?> </h3>
-                                <p>
-                                    <?php echo "$nom" ?>
-                                </p>
-                                <p class="descriptif">
-                                    <?php echo "$description" ?>
-                                </p>
-                                <p class="descriptif">
-                                   Prix : <?php echo "$prix" ?> € les 100g 
-                                </p>
-                                <p class="descriptif">
-                                    Quantité en stock = <?php echo "$quantite" ?>
-                                </p>
-                            </div>
-                            <img id="imgthepromo" src="<?php echo "$image" ?>" />
-                        </div>
-                    </div>
+<div class="ajout">
+    <h2>Modification</h2>
+    <form action="update.php" method="post">
+        <div class="formulaire3">
+            <p class="label">TYPE :</p>
+            <input name="type" class="champ" type="text" value="<?php echo $type; ?>"/><br/>
+        </div>
+        <div class="formulaire3">
+            <p class="label">NOM :</p>
+            <input name="nom" class="champ" type="text" value="<?php echo $nom; ?>"/><br/>
+        </div>
+        <div class="formulaire3">
+            <p class="label">DESCRIPTION : </p>
+            <div id="ckeditor-area">
+                <textarea name="description" type="text"/><?php echo $description; ?></textarea><br/>
+            </div>
+        </div>
+        <div class="formulaire3">
+            <p class="label">PRIX : </p>
+            <input name="prix" class="champ" type="text" value="<?php echo $prix; ?>"/><br/>
+        </div>
+        <div class="formulaire3">
+            <p class="label">QUANTITE :</p>
+            <input name="quantite" class="champ" type="text" value="<?php echo $quantite; ?>"/><br/>
+        </div>
+    <!--                        <div class="formulaire2">
+            <p class="label">LIEN IMAGE : </p>
+            <input name="image" type="text" value="<?php echo $image; ?>"/><br/>
+        </div>-->
+        <input class="formButton" type="submit" value="Modifier"/>
+        <input class="formButton" type="button" value="Annuler" onclick="location.href='index.php'"/><br/>
+
+        <input type="hidden" name="id" value="<?php echo $id; ?>" />
+    </form>
+    <form action="uploadImageThe.php" enctype="multipart/form-data" method="post">
+        <div class="formulaire3">
+            <p class="label">Image : </p>
+            <input name="datafile" size="30" type="file">
+            <input type="hidden" name="id" value="<?php echo"$id" ?>"> <br/>
+        </div>  
+        <input class="formButton" type="submit" value="modifier l'image">
+    </form>
+</div>
 
 
-                </body>
-                </html>
+<div class="apercu" style="text-align:center">
+    <h3>Apercu</h3>
+    <div class="fondthe">
+        <div class="descriptionthe">
+            <h3> Notre thé <?php echo "$type" ?> </h3>
+            <p>
+                <?php echo "$nom" ?>
+            </p>
+            <p class="descriptif">
+                <?php echo "$description" ?>
+            </p>
+            <p class="descriptif">
+               Prix : <?php echo "$prix" ?> € les 100g 
+            </p>
+            <p class="descriptif">
+                Quantité en stock = <?php echo "$quantite" ?>
+            </p>
+        </div>
+        <img id="imgthepromo" src="<?php echo "$image" ?>" />
+    </div>
+</div>
+                    
+<script>
+    CKEDITOR.replace('description', {
+        customConfig: '../ckeditor_config.js'
+    });
+</script>
+
+</body>
+</html>

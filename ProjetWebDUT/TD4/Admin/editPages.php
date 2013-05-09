@@ -50,12 +50,12 @@ if ($a = mysql_fetch_object($r)) {
             <input  name="datafile" size="30" type="file">
             <input type="hidden" name="page" value="<?php echo"$page" ?>"> <br/>
         </div>  
-        <input class="formButton" type="submit" value="modifier l'image">
+        <input class="formButton" type="submit" value="Modifier l'image">
     </form>
 
     <form action="deleteImage.php" method="post">
         <input type="hidden" name="page" value="<?php echo"$page" ?>"> <br/>
-        <input class="formButton" type="submit" value="supprimer l'image">
+        <input class="formButton" type="submit" value="Supprimer l'image">
     </form>
 </div>
 
